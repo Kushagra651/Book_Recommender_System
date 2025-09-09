@@ -1,96 +1,129 @@
-📚 Book Recommender System
+# 📚 Book Recommender System
 
-A machine learning–powered web application that recommends books to users based on popularity and similarity.
-Built with Flask, Pandas, NumPy, and Pickle, and served through a simple yet elegant UI using Bootstrap.
+A machine learning–powered web application that recommends books to users based on popularity and similarity. Built with Flask, Pandas, NumPy, and Pickle, and served through a clean, responsive UI using Bootstrap.
 
-🚀 Features
+---
 
-📖 Top 50 Books Section – Displays the most popular books with authors, ratings, votes, and cover images.
+## 🚀 Features
 
-🔍 Search & Recommend – Enter a book title to get similar recommendations.
+- **📖 Top 50 Books Section** – Displays the most popular books with authors, ratings, votes, and cover images.  
+- **🔍 Search & Recommend** – Enter a book title to get similar recommendations.  
+- **📊 Popularity-Based Filtering** – Shows highly-rated books with at least 250+ ratings.  
+- **🧠 Collaborative Filtering** – Uses similarity scores between books for recommendations.  
+- **🎨 Interactive UI** – Clean, responsive Bootstrap design with styled book cards.  
 
-📊 Popularity-Based Filtering – Shows highly-rated books with at least 250+ ratings.
+---
 
-🧠 Collaborative Filtering – Uses similarity scores between books for recommendations.
+## 🛠️ Tech Stack
 
-🎨 Interactive UI – Clean, responsive Bootstrap design with styled book cards.
+- **Backend:** Flask (Python)  
+- **ML / Data:** Pandas, NumPy, Scikit-learn (preprocessing), Pickle (model storage)  
+- **Frontend:** HTML, CSS, Bootstrap  
+- **Database:** CSV datasets (Books, Users, Ratings from Book-Crossing dataset)  
 
-🛠️ Tech Stack
+---
 
-Backend: Flask (Python)
+## 📂 Project Structure
 
-ML / Data: Pandas, NumPy, Scikit-learn (preprocessing), Pickle (model storage)
-
-Frontend: HTML, CSS, Bootstrap
-
-Database: CSV datasets (Books, Users, Ratings from Book-Crossing dataset)
-
-📂 Project Structure
+```text
 Book_Recommender/
-│── app.py                # Flask app entry point
-│── Notebook/             # Pickle files (models, similarity scores, etc.)
+│── app.py                 # Flask app entry point
+│── Notebook/              # Pickle files (models, similarity scores, etc.)
 │   ├── popular.pkl
 │   ├── pt.pkl
 │   ├── books.pkl
 │   └── similarity_scores.pkl
-│── templates/            # HTML templates
+│── templates/             # HTML templates
 │   ├── index.html
 │   └── recommende.html
-│── static/               # (Optional) CSS/JS/Image files
-│── data/                 # Raw dataset files (Books.csv, Ratings.csv, Users.csv)
-│── requirements.txt      # Python dependencies
-└── README.md             # Project documentation
+│── static/                # Optional CSS/JS/Image files
+│── data/                  # Raw dataset files
+│   ├── Books.csv
+│   ├── Ratings.csv
+│   └── Users.csv
+│── requirements.txt       # Python dependencies
+└── README.md              # Project documentation
+```
+````
+## ⚡️ Installation & Setup
 
-⚡ Installation & Setup
-1. Clone the repo
-git clone https://github.com/<your-username>/Book_Recommender.git
+Clone the repository:
+```bash
+git clone [https://github.com/](https://github.com/)<your-username>/Book_Recommender.git
 cd Book_Recommender
+````
 
-2. Create a virtual environment
+Create a virtual environment:
+
+```bash
 python -m venv venv
-venv\Scripts\activate     # On Windows
-source venv/bin/activate  # On Mac/Linux
+```
 
-3. Install dependencies
+Activate virtual environment:
+
+**Windows:**
+
+```bash
+venv\Scripts\activate
+```
+
+**Mac/Linux:**
+
+```bash
+source venv/bin/activate
+```
+
+Install dependencies:
+
+```bash
 pip install -r requirements.txt
+```
 
-4. Run the Flask app
+Run the Flask app:
+
+```bash
 python app.py
+```
 
+Open in browser:
+Go to `http://127.0.0.1:5000/`
 
-App will be available at http://127.0.0.1:5000/
+-----
 
-🎯 Usage
+## 🎯 Usage
 
-Open the homepage → browse Top 50 Books.
+  * Open the homepage → Browse Top 50 Books.
+  * Go to Recommend page → Type a book title.
+  * Get personalized recommendations with author names, ratings, votes, and book covers.
 
-Go to Recommend page → type a book title.
+-----
 
-Get personalized recommendations with author names, ratings, votes, and book covers.
+## 📊 Dataset
 
-📊 Dataset
+The project uses the **Book-Crossing Dataset**:
 
-The project uses the Book-Crossing Dataset containing:
+  * `Books.csv` → Book details (title, author, ISBN, cover image)
+  * `Ratings.csv` → User ratings for books
+  * `Users.csv` → User details
 
-Books.csv → Book details (title, author, ISBN, cover image).
+-----
 
-Ratings.csv → User ratings for books.
+## 📸 Screenshots
 
-Users.csv → User details.
+-----
 
-📸 Screenshots
+## 🔮 Future Improvements
 
-📌 [Insert screenshots of homepage & recommend page]
+  * ✅ Deploy on Heroku / Render / AWS for a live demo
+  * ✅ Add a user login system to save favorite books
+  * ✅ Integrate content-based filtering (using book descriptions)
+  * ✅ Improve the recommendation model with deep learning
 
-🔮 Future Improvements
+-----
 
-✅ Deploy on Heroku / Render / AWS for live demo.
+## 🤝 Contributing
 
-✅ Add user login system to save favorite books.
-
-✅ Integrate content-based filtering (using book descriptions).
-
-✅ Improve recommendation model with deep learning.
-
-🤝 Contributing
 Pull requests are welcome. For major changes, please open an issue first to discuss what you’d like to change.
+
+```
+```
