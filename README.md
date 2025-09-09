@@ -109,6 +109,9 @@ The project uses the **Book-Crossing Dataset**:
 -----
 
 ## 📸 Screenshots
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/8b62bb10-7c58-47e0-bde8-81bc48278333" />
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/5b348e9d-b9cb-47b0-b68c-131f9c159a90" />
+
 
 -----
 
